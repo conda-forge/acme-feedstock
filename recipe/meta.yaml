@@ -1,5 +1,5 @@
 {% set name = "acme" %}
-{% set version = "1.17.0" %}
+{% set version = "1.18.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/acme-{{ version }}.tar.gz
-  sha256: 2af48e40679103212532cb3d220df444207e5e7b532e0ccebe7773792e0f320e
+  sha256: 9ae06031bbcc492d4ea20aec36bb2ead08b40ccb70d980ade8ecfe8a15d762af
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - pyrfc3339
     - python >=3.6
     - pytz
-    - requests >=2.6.0
+    - requests >=2.14.2
     - requests-toolbelt >=0.3.0
     - setuptools >=39.0.1
 
