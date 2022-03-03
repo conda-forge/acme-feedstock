@@ -1,5 +1,5 @@
 {% set name = "acme" %}
-{% set version = "1.23.0" %}
+{% set version = "1.24.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/acme-{{ version }}.tar.gz
-  sha256: f34bd792eb8394a972b4b5292fd74693fc8451b071f3cdc6201f1bed4f48ab2f
+  sha256: 63161f442d7c995313305663ad2eef6b3f770899c3f635e1c1f1d0141696b298
 
 build:
   number: 0
@@ -18,17 +18,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - cryptography >=2.5.0
     - josepy >=1.10.0
     - pyopenssl >=17.3.0
     - pyrfc3339
-    - python >=3.6
-    - pytz
-    - requests >=2.14.2
+    - python >=3.7
+    - pytz >=2019.3
+    - requests >=2.20.0
     - requests-toolbelt >=0.3.0
-    - setuptools >=39.0.1
+    - setuptools >=41.6.0
 
 test:
   imports:
