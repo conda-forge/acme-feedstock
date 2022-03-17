@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
   run:
     - cryptography >=2.5.0
-    - josepy >=1.10.0
+    - josepy >=1.13.0
     - pyopenssl >=17.3.0
     - pyrfc3339
     - python >=3.7
