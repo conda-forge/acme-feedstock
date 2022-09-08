@@ -1,7 +1,7 @@
 About acme
 ==========
 
-Home: https://github.com/letsencrypt/letsencrypt
+Home: https://github.com/certbot/certbot
 
 Package license: Apache-2.0
 
