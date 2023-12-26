@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - cryptography >=3.2.1
     - josepy >=1.13.0
     - pyopenssl >=17.5.0,!=23.1.0
     - pyrfc3339
-    - python >=3.7
+    - python >=3.8
     - pytz >=2019.3
     - requests >=2.20.0
     - setuptools >=41.6.0
