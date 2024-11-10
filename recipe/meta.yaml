@@ -1,13 +1,13 @@
 {% set name = "acme" %}
 {% set version = "3.0.0" %}
-
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/acme-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/acme-{{ version }}.tar.gz
   sha256: 2bb48ad117b4190600e9fb5c372e3b658cd320bc445d5dba493be20db490d9e4
 
 build:
@@ -18,13 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - setuptools
+    - python {{ python_min }}.*
   run:
     - cryptography >=3.2.1
-    - josepy >=1.13.0
+    - josepy >=1.13.0,<2
     - pyopenssl >=17.5.0,!=23.1.0
     - pyrfc3339
-    - python >=3.8
+    - python >={{ python_min }}
     - pytz >=2019.3
     - requests >=2.20.0
     - setuptools >=41.6.0
@@ -36,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python ={{ python_min }}
 
 about:
   home: https://github.com/certbot/certbot
