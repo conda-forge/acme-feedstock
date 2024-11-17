@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - setuptools
-    - python {{ python_min }}.*
+    - python {{ python_min }}
   run:
     - cryptography >=3.2.1
     - josepy >=1.13.0,<2
@@ -37,7 +37,7 @@ test:
     - pip check
   requires:
     - pip
-    - python ={{ python_min }}
+    - python {{ python_min }}
 
 about:
   home: https://github.com/certbot/certbot
