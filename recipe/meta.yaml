@@ -1,5 +1,5 @@
 {% set name = "acme" %}
-{% set version = "4.1.1" %}
+{% set version = "4.2.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/acme-{{ version }}.tar.gz
-  sha256: 0ffaaf6d3f41ff05772fd2b6170cf0b2b139f5134d7a70ee49f6e63ca20e8f9a
+  sha256: 0df68c0e1acb3824a2100013f8cd51bda2e1a56aa23447449d14c942959f0c41
 
 build:
   number: 0
