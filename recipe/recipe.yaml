@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: acme
-  version: "5.7.0"
+  version: 5.8.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/acme-${{ version }}.tar.gz
-  sha256: 4be4fe6cf3809c3988d75fa1213ce8e784d9d5d8380cac63c2dca555e105653d
+  sha256: 44c4edb53acdd3fa8402cb29c78a6d1bd2005d777a4d2fcd12663bbc3c147b34
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - cryptography >=43.0.0
+    - cryptography >=47.0.0
     - josepy >=2.0.0
     - pyopenssl >=25.0.0
     - pyrfc3339
