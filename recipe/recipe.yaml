@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: acme
-  version: 5.8.0
+  version: "5.9.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/acme-${{ version }}.tar.gz
-  sha256: 44c4edb53acdd3fa8402cb29c78a6d1bd2005d777a4d2fcd12663bbc3c147b34
+  sha256: bbfd9cf42797b5378a05833c0fd917de9418b69e03cbdb39abb7e85e5532fe75
 
 build:
   number: 0
